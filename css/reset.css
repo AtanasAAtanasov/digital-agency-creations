@@ -1,0 +1,220 @@
+/* Modern CSS Reset */
+
+/* Box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* HTML & Body */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-deep);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--leading-tight);
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+h1 { font-size: var(--text-5xl); }
+h2 { font-size: var(--text-4xl); }
+h3 { font-size: var(--text-3xl); }
+h4 { font-size: var(--text-2xl); }
+h5 { font-size: var(--text-xl); }
+h6 { font-size: var(--text-lg); }
+
+p {
+  margin: 0;
+  line-height: var(--leading-normal);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Form elements */
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Lists */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove default outline and add custom focus styles */
+:focus-visible {
+  outline: 2px solid var(--color-accent-primary);
+  outline-offset: 2px;
+}
+
+/* Remove outline for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Remove default button styles */
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* Remove default fieldset styles */
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove default legend styles */
+legend {
+  padding: 0;
+}
+
+/* Remove default margin for elements */
+figure, figcaption {
+  margin: 0;
+}
+
+/* Remove default margins for blockquote */
+blockquote {
+  margin: 0;
+}
+
+/* Remove default styles for details and summary */
+details, summary {
+  display: block;
+}
+
+/* Remove default styles for abbr */
+abbr[title] {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+/* Remove default styles for bdi and bdo */
+bdi, bdo {
+  unicode-bidi: isolate;
+}
+
+/* Remove default styles for mark */
+mark {
+  background-color: transparent;
+  color: inherit;
+}
+
+/* Remove default styles for progress */
+progress {
+  vertical-align: baseline;
+}
+
+/* Remove default styles for sub and sup */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub { bottom: -0.25em; }
+sup { top: -0.5em; }
+
+/* Ensure table elements display properly */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th, td {
+  padding: 0;
+  text-align: left;
+}
+
+/* Remove default styles for template and hidden elements */
+template, [hidden] {
+  display: none;
+}
+
+/* Ensure media elements fill their containers */
+audio, canvas, iframe, img, svg, video {
+  vertical-align: middle;
+}
+
+/* Prevent iOS text size adjust */
+input, textarea, select, button {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Remove tap highlight on iOS */
+button, input, select, textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Remove default appearance for form elements */
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+/* Remove spin buttons from number inputs */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
