@@ -44,10 +44,6 @@
     grid-template-columns: repeat(2, 1fr);
   }
   
-  .team-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
   .payment-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -93,10 +89,6 @@
 /* Large Devices (laptops, 1024px - 1279px) */
 @media (min-width: 1024px) and (max-width: 1279px) {
   .services-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  
-  .team-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -156,7 +148,6 @@
   .pricing-card,
   .payment-card,
   .testimonial-card,
-  .team-card,
   .about-visual-card {
     backdrop-filter: none;
     background: var(--color-bg-surface);
@@ -180,8 +171,7 @@
   .btn,
   .navbar-toggle,
   .slider-btn,
-  .footer-social-link,
-  .team-social-link {
+  .footer-social-link {
     min-height: 44px;
     min-width: 44px;
   }
