@@ -1,1 +1,654 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Digital Agency Creations - Full-service digital marketing agency specializing in SEO, PPC, social media, content marketing, web design, and analytics. Transform your digital presence today.">
+  <meta name="keywords" content="digital marketing, SEO, PPC, social media marketing, content marketing, web design, analytics, digital agency">
+  <meta name="author" content="Digital Agency Creations">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Digital Agency Creations - Transform Your Digital Presence">
+  <meta property="og:description" content="Full-service digital marketing agency delivering data-driven strategies that drive real results.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://digitalagencycreations.com">
+  <meta property="og:image" content="https://digitalagencycreations.com/og-image.png">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Digital Agency Creations - Transform Your Digital Presence">
+  <meta name="twitter:description" content="Full-service digital marketing agency delivering data-driven strategies that drive real results.">
+  
+  <title>Digital Agency Creations — Full-Service Digital Marketing Agency</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%236c63ff'/%3E%3Cstop offset='100%25' style='stop-color:%2300d4ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23grad)'/%3E%3Ctext x='50' y='65' font-family='Arial' font-size='50' font-weight='bold' fill='white' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="#home" class="navbar-logo">DAC <span>Digital Agency Creations</span></a>
+      
+      <div class="navbar-menu">
+        <a href="#home" class="navbar-link">Home</a>
+        <a href="#services" class="navbar-link">Services</a>
+        <a href="#about" class="navbar-link">About</a>
+        <a href="#testimonials" class="navbar-link">Testimonials</a>
+        <a href="#contact" class="btn btn-primary">Get Started</a>
+      </div>
+      
+      <div class="navbar-actions">
+        <button class="navbar-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu Overlay -->
+  <div class="navbar-overlay"></div>
+  
+  <!-- Mobile Menu -->
+  <div class="navbar-mobile">
+    <div class="navbar-mobile-header">
+      <span class="navbar-logo">DAC</span>
+      <button class="navbar-close" aria-label="Close menu">&times;</button>
+    </div>
+    <nav class="navbar-mobile-links">
+      <a href="#home" class="navbar-mobile-link">Home</a>
+      <a href="#services" class="navbar-mobile-link">Services</a>
+      <a href="#about" class="navbar-mobile-link">About</a>
+      <a href="#testimonials" class="navbar-mobile-link">Testimonials</a>
+      <a href="#contact" class="navbar-mobile-link">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-primary btn-full">Get Started</a>
+  </div>
+  
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-background">
+      <div class="hero-circuit">
+        <svg class="circuit-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <defs>
+            <pattern id="circuitGrid" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+              <line x1="0" y1="40" x2="80" y2="40" stroke="#6c63ff" stroke-width="0.5" opacity="0.4"/>
+              <line x1="40" y1="0" x2="40" y2="80" stroke="#00d4ff" stroke-width="0.5" opacity="0.4"/>
+              <line x1="0" y1="0" x2="40" y2="0" stroke="#6c63ff" stroke-width="0.5" opacity="0.25"/>
+              <line x1="80" y1="40" x2="80" y2="80" stroke="#00d4ff" stroke-width="0.5" opacity="0.25"/>
+              <line x1="40" y1="80" x2="80" y2="80" stroke="#6c63ff" stroke-width="0.5" opacity="0.25"/>
+              <circle cx="40" cy="40" r="2.5" fill="#6c63ff" opacity="0.7"/>
+              <circle cx="0" cy="0" r="1.5" fill="#00d4ff" opacity="0.5"/>
+              <circle cx="80" cy="80" r="1.5" fill="#00d4ff" opacity="0.5"/>
+              <circle cx="0" cy="80" r="1.5" fill="#6c63ff" opacity="0.5"/>
+              <circle cx="80" cy="0" r="1.5" fill="#6c63ff" opacity="0.5"/>
+            </pattern>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="2" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+              <stop offset="0%" stop-color="#050816" stop-opacity="0"/>
+              <stop offset="100%" stop-color="#050816" stop-opacity="0.85"/>
+            </radialGradient>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#circuitGrid)"/>
+          <!-- Animated data packets -->
+          <circle r="3" fill="#6c63ff" filter="url(#glow)" opacity="0.9" class="data-packet">
+            <animateMotion dur="6s" repeatCount="indefinite" begin="0s">
+              <mpath href="#path1"/>
+            </animateMotion>
+          </circle>
+          <circle r="2.5" fill="#00d4ff" filter="url(#glow)" opacity="0.9" class="data-packet">
+            <animateMotion dur="8s" repeatCount="indefinite" begin="-2s">
+              <mpath href="#path2"/>
+            </animateMotion>
+          </circle>
+          <circle r="3" fill="#6c63ff" filter="url(#glow)" opacity="0.8" class="data-packet">
+            <animateMotion dur="7s" repeatCount="indefinite" begin="-4s">
+              <mpath href="#path3"/>
+            </animateMotion>
+          </circle>
+          <circle r="2" fill="#00d4ff" filter="url(#glow)" opacity="0.9" class="data-packet">
+            <animateMotion dur="5s" repeatCount="indefinite" begin="-1s">
+              <mpath href="#path4"/>
+            </animateMotion>
+          </circle>
+          <circle r="3.5" fill="#6c63ff" filter="url(#glow)" opacity="0.7" class="data-packet">
+            <animateMotion dur="9s" repeatCount="indefinite" begin="-3s">
+              <mpath href="#path5"/>
+            </animateMotion>
+          </circle>
+          <!-- Motion paths -->
+          <defs>
+            <path id="path1" d="M0,80 H400 V160 H800 V240 H1200"/>
+            <path id="path2" d="M1280,0 V160 H960 V320 H640 V480"/>
+            <path id="path3" d="M0,240 H320 V400 H640 V560 H960"/>
+            <path id="path4" d="M640,0 V80 H960 V160 H1280 V240"/>
+            <path id="path5" d="M0,400 H240 V320 H480 V240 H720 V160 H960"/>
+          </defs>
+          <!-- Pulsing nodes -->
+          <circle cx="400" cy="160" r="4" fill="#6c63ff" filter="url(#glow)" class="node-pulse">
+            <animate attributeName="r" values="4;8;4" dur="3s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.8;0.2;0.8" dur="3s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="800" cy="240" r="4" fill="#00d4ff" filter="url(#glow)" class="node-pulse">
+            <animate attributeName="r" values="4;8;4" dur="4s" repeatCount="indefinite" begin="-1s"/>
+            <animate attributeName="opacity" values="0.8;0.2;0.8" dur="4s" repeatCount="indefinite" begin="-1s"/>
+          </circle>
+          <circle cx="640" cy="320" r="4" fill="#6c63ff" filter="url(#glow)" class="node-pulse">
+            <animate attributeName="r" values="4;8;4" dur="3.5s" repeatCount="indefinite" begin="-2s"/>
+            <animate attributeName="opacity" values="0.8;0.2;0.8" dur="3.5s" repeatCount="indefinite" begin="-2s"/>
+          </circle>
+          <circle cx="320" cy="400" r="3.5" fill="#00d4ff" filter="url(#glow)" class="node-pulse">
+            <animate attributeName="r" values="3.5;7;3.5" dur="5s" repeatCount="indefinite" begin="-0.5s"/>
+            <animate attributeName="opacity" values="0.8;0.2;0.8" dur="5s" repeatCount="indefinite" begin="-0.5s"/>
+          </circle>
+          <!-- Vignette overlay -->
+          <rect width="100%" height="100%" fill="url(#vignette)"/>
+        </svg>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1 class="reveal">Transform Your <span class="gradient-text">Digital Presence</span></h1>
+          <p class="hero-subtitle reveal" data-delay="1">Digital Agency Creations delivers data-driven strategies that drive measurable results. From SEO to social media, we help your brand stand out in the digital landscape.</p>
+          <div class="hero-buttons reveal" data-delay="2">
+            <a href="#contact" class="btn btn-primary btn-large">Get Free Audit</a>
+            <a href="#services" class="btn btn-outline btn-large">View Our Work</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">What We Do</span>
+        <h2>Our Services</h2>
+        <p>Comprehensive digital marketing solutions tailored to your business goals</p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="card service-card reveal" data-delay="1">
+          <div class="service-card-icon">🔍</div>
+          <h3>SEO Optimization</h3>
+          <p>Boost your search rankings and drive organic traffic with our proven SEO strategies.</p>
+          <ul class="service-card-features">
+            <li>Technical SEO audits</li>
+            <li>Keyword research & strategy</li>
+            <li>On-page optimization</li>
+            <li>Link building campaigns</li>
+          </ul>
+        </div>
+        
+        <div class="card service-card reveal" data-delay="2">
+          <div class="service-card-icon">📊</div>
+          <h3>PPC Advertising</h3>
+          <p>Maximize ROI with targeted pay-per-click campaigns across all major platforms.</p>
+          <ul class="service-card-features">
+            <li>Google Ads management</li>
+            <li>Meta Ads (Facebook/Instagram)</li>
+            <li>LinkedIn advertising</li>
+            <li>Programmatic display</li>
+          </ul>
+        </div>
+        
+        <div class="card service-card reveal" data-delay="3">
+          <div class="service-card-icon">💬</div>
+          <h3>Social Media Marketing</h3>
+          <p>Build your brand presence and engage your audience across social platforms.</p>
+          <ul class="service-card-features">
+            <li>Content strategy & creation</li>
+            <li>Community management</li>
+            <li>Influencer partnerships</li>
+            <li>Social media advertising</li>
+          </ul>
+        </div>
+        
+        <div class="card service-card reveal" data-delay="4">
+          <div class="service-card-icon">✍️</div>
+          <h3>Content Marketing</h3>
+          <p>Create compelling content that resonates with your audience and drives conversions.</p>
+          <ul class="service-card-features">
+            <li>Blog & article writing</li>
+            <li>Video production</li>
+            <li>Infographics & visuals</li>
+            <li>Thought leadership content</li>
+          </ul>
+        </div>
+        
+        <div class="card service-card reveal" data-delay="5">
+          <div class="service-card-icon">📧</div>
+          <h3>Email Marketing</h3>
+          <p>Nurture leads and retain customers with targeted email campaigns.</p>
+          <ul class="service-card-features">
+            <li>Email automation workflows</li>
+            <li>Segmentation & personalization</li>
+            <li>A/B testing & optimization</li>
+            <li>Newsletter strategy</li>
+          </ul>
+        </div>
+        
+        <div class="card service-card reveal" data-delay="6">
+          <div class="service-card-icon">🎨</div>
+          <h3>Web Design & Development</h3>
+          <p>Create stunning, conversion-optimized websites that represent your brand.</p>
+          <ul class="service-card-features">
+            <li>Custom website design</li>
+            <li>Responsive development</li>
+            <li>E-commerce solutions</li>
+            <li>Landing page optimization</li>
+          </ul>
+        </div>
+        
+        <div class="card service-card reveal" data-delay="7">
+          <div class="service-card-icon">📈</div>
+          <h3>Conversion Rate Optimization</h3>
+          <p>Turn more visitors into customers with data-driven CRO strategies.</p>
+          <ul class="service-card-features">
+            <li>A/B testing</li>
+            <li>Heatmap analysis</li>
+            <li>User experience optimization</li>
+            <li>Funnel analysis</li>
+          </ul>
+        </div>
+        
+        <div class="card service-card reveal" data-delay="8">
+          <div class="service-card-icon">📉</div>
+          <h3>Analytics & Reporting</h3>
+          <p>Gain actionable insights with comprehensive analytics and custom dashboards.</p>
+          <ul class="service-card-features">
+            <li>Google Analytics setup</li>
+            <li>Custom dashboard creation</li>
+            <li>Attribution modeling</li>
+            <li>Performance reporting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content reveal-fade-left">
+          <span class="section-subtitle">About Us</span>
+          <h2>Why Digital Agency Creations?</h2>
+          <p>We're not just another digital agency. We're your strategic partner in navigating the complex digital landscape. Our team of experts combines creativity with data-driven insights to deliver campaigns that not only look great but perform even better.</p>
+          <p>Founded with a passion for helping businesses grow, Digital Agency Creations has helped over 500 clients achieve their marketing goals. We believe in transparency, results-first thinking, and building lasting partnerships with our clients.</p>
+          
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon">📊</div>
+              <div class="about-feature-text">
+                <h3>Data-Driven Approach</h3>
+                <p>Every decision backed by data and analytics</p>
+              </div>
+            </div>
+            
+            <div class="about-feature">
+              <div class="about-feature-icon">💡</div>
+              <div class="about-feature-text">
+                <h3>Transparent Reporting</h3>
+                <p>Clear, honest communication on all metrics</p>
+              </div>
+            </div>
+            
+            <div class="about-feature">
+              <div class="about-feature-icon">🎯</div>
+              <div class="about-feature-text">
+                <h3>Results-First Focus</h3>
+                <p>Obsessed with delivering measurable outcomes</p>
+              </div>
+            </div>
+            
+            <div class="about-feature">
+              <div class="about-feature-icon">⚡</div>
+              <div class="about-feature-text">
+                <h3>Always-On Support</h3>
+                <p>Dedicated team available when you need us</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-visual reveal-fade-right">
+          <div class="about-visual-card">
+            <h3 style="margin-bottom: var(--space-4);">Our Mission</h3>
+            <p style="margin-bottom: var(--space-4);">To empower businesses of all sizes to thrive in the digital age through innovative, data-driven marketing strategies that deliver real, measurable results.</p>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4);">
+              <div>
+                <div style="font-size: var(--text-3xl); font-weight: var(--font-weight-bold); color: var(--color-accent-primary);">500+</div>
+                <div style="font-size: var(--text-sm); color: var(--color-text-muted);">Projects Delivered</div>
+              </div>
+              <div>
+                <div style="font-size: var(--text-3xl); font-weight: var(--font-weight-bold); color: var(--color-accent-secondary);">98%</div>
+                <div style="font-size: var(--text-sm); color: var(--color-text-muted);">Success Rate</div>
+              </div>
+              <div>
+                <div style="font-size: var(--text-3xl); font-weight: var(--font-weight-bold); color: var(--color-accent-cta);">50+</div>
+                <div style="font-size: var(--text-sm); color: var(--color-text-muted);">Team Members</div>
+              </div>
+              <div>
+                <div style="font-size: var(--text-3xl); font-weight: var(--font-weight-bold); color: var(--color-accent-success);">24/7</div>
+                <div style="font-size: var(--text-sm); color: var(--color-text-muted);">Support Available</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Payment Options Section -->
+  <section id="payment">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Payment</span>
+        <h2>Flexible Payment Options</h2>
+        <p>Pay your way — we accept all major payment methods</p>
+      </div>
+      
+      <div class="payment-grid">
+        <div class="card payment-card reveal" data-delay="1">
+          <div class="payment-card-icon">💳</div>
+          <h3>Credit/Debit Card</h3>
+          <p>Visa, Mastercard, Amex</p>
+          <span class="payment-badge">Accepted</span>
+        </div>
+        
+        <div class="card payment-card reveal" data-delay="2">
+          <div class="payment-card-icon">🅿️</div>
+          <h3>PayPal</h3>
+          <p>Fast & secure payments</p>
+          <span class="payment-badge">Accepted</span>
+        </div>
+        
+        <div class="card payment-card reveal" data-delay="3">
+          <div class="payment-card-icon">🏦</div>
+          <h3>Bank Transfer</h3>
+          <p>ACH & wire transfers</p>
+          <span class="payment-badge">Accepted</span>
+        </div>
+        
+        <div class="card payment-card reveal" data-delay="4">
+          <div class="payment-card-icon">₿</div>
+          <h3>Cryptocurrency</h3>
+          <p>BTC, ETH, USDC</p>
+          <span class="payment-badge">Accepted</span>
+        </div>
+      </div>
+      
+      <div class="payment-note reveal" data-delay="5">
+        <p>🔒 All transactions secured by 256-bit SSL encryption. Custom project quotes available — contact us for a tailored proposal.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Testimonials</span>
+        <h2>What Our Clients Say</h2>
+        <p>Real results from real businesses</p>
+      </div>
+      
+      <div class="testimonials-slider reveal" data-delay="1">
+        <div class="testimonials-track">
+          <div class="testimonials-container">
+            <div class="testimonial-slide">
+              <div class="card testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-content">Digital Agency Creations transformed our online presence. Our organic traffic increased by 300% in just 6 months. The team is incredibly responsive and truly cares about our success.</p>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar">JT</div>
+                  <div class="testimonial-info">
+                    <h4>John Thompson</h4>
+                    <p>CEO, TechStart Inc.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="testimonial-slide">
+              <div class="card testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-content">Working with Digital Agency Creations has been a game-changer for our e-commerce business. Their PPC expertise delivered a 450% ROI within the first quarter.</p>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar">SL</div>
+                  <div class="testimonial-info">
+                    <h4>Sarah Lee</h4>
+                    <p>Marketing Director, ShopStyle</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="testimonial-slide">
+              <div class="card testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-content">The team's content marketing strategy helped us establish thought leadership in our industry. Our engagement rates have never been higher.</p>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar">MB</div>
+                  <div class="testimonial-info">
+                    <h4>Michael Brown</h4>
+                    <p>Founder, FinanceFlow</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="testimonial-slide">
+              <div class="card testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-content">Digital Agency Creations redesigned our entire website and the results have been phenomenal. Conversion rates increased by 200% and our bounce rate dropped significantly.</p>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar">EW</div>
+                  <div class="testimonial-info">
+                    <h4>Emily Wilson</h4>
+                    <p>COO, HealthFirst</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="testimonial-slide">
+              <div class="card testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-content">Their email marketing automation has saved us countless hours while dramatically improving our customer retention. A truly professional team.</p>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar">DK</div>
+                  <div class="testimonial-info">
+                    <h4>David Kim</h4>
+                    <p>Owner, RetailMax</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonials-controls">
+          <button class="slider-btn prev" aria-label="Previous testimonial">‹</button>
+          <div class="testimonials-dots"></div>
+          <button class="slider-btn next" aria-label="Next testimonial">›</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Contact</span>
+        <h2>Get In Touch</h2>
+        <p>Ready to transform your digital presence? Let's talk.</p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info reveal-fade-left">
+          <h3>Contact Information</h3>
+          
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div class="contact-item-content">
+              <h4>Address</h4>
+              <p>123 Digital Avenue, Suite 400<br>San Francisco, CA 94105</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-item-icon">📞</div>
+            <div class="contact-item-content">
+              <h4>Phone</h4>
+              <p><a href="tel:+14155551234">+1 (415) 555-1234</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-item-icon">✉️</div>
+            <div class="contact-item-content">
+              <h4>Email</h4>
+              <p><a href="mailto:hello@digitalagencycreations.com">hello@digitalagencycreations.com</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-item-icon">🕐</div>
+            <div class="contact-item-content">
+              <h4>Office Hours</h4>
+              <p>Monday - Friday: 9:00 AM - 6:00 PM PST<br>Weekend: Emergency support only</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="reveal-fade-right">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+              <span class="error-message"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+              <span class="error-message"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="company">Company Name *</label>
+              <input type="text" id="company" name="company" placeholder="Your Company" required>
+              <span class="error-message"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="service">Service Interest</label>
+              <select id="service" name="service">
+                <option value="">Select a service</option>
+                <option value="seo">SEO Optimization</option>
+                <option value="ppc">PPC Advertising</option>
+                <option value="social">Social Media Marketing</option>
+                <option value="content">Content Marketing</option>
+                <option value="email">Email Marketing</option>
+                <option value="web">Web Design & Development</option>
+                <option value="cro">Conversion Rate Optimization</option>
+                <option value="analytics">Analytics & Reporting</option>
+                <option value="full-service">Full Service Package</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" placeholder="Tell us about your project and goals..." required></textarea>
+              <span class="error-message"></span>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="navbar-logo" style="font-size: var(--text-xl);">DAC <span>Digital Agency Creations</span></a>
+          <p>Transforming businesses through innovative digital marketing strategies that deliver measurable results.</p>
+          <div class="footer-social">
+            <a href="#" class="footer-social-link" aria-label="LinkedIn">in</a>
+            <a href="#" class="footer-social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="footer-social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="footer-social-link" aria-label="Facebook">f</a>
+            <a href="#" class="footer-social-link" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Services</h4>
+          <div class="footer-links">
+            <a href="#services">SEO Optimization</a>
+            <a href="#services">PPC Advertising</a>
+            <a href="#services">Social Media</a>
+            <a href="#services">Content Marketing</a>
+            <a href="#services">Web Design</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="#about">About Us</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Stay Updated</h4>
+          <div class="footer-newsletter">
+            <p>Subscribe to our newsletter for the latest marketing tips and insights.</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Enter your email" aria-label="Email address">
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2025 Digital Agency Creations. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- JavaScript -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
